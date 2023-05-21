@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Full Stack web developer">
+    <meta name="keywords" content="HTML, CSS, JavaScript ,react,nodejs ">
+    <meta name="author" content="Radhe">
+    <title>Welcome to-Code With Radhe</title>
+    <link rel="icon" type="image/x-icon" href="https://blogger.googleusercontent.com/img/a/AVvXsEhLY_nJVO0-2YeVVV31n3yKDVBesgIuacSH1GrzdhmQkeh6nXWeNcp6UEnciSRhJTUClgIefg_iVoD2ImPtByCmZdVKsdRBhRoZ7m-c8Se_LV-ZXO17kuOKnxvP2QF_ldjJm9siTakb2AhS4ZVS0MP3lXGnQh4G6OeqhbiV3F3dZjwSUSK0215bJAtWng=w314-h264-p-k-no-nu">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto+Condensed:ital@1&display=swap');
+    </style>
+    <style>
+        * {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Oswald', sans-serif, Condensed, sans-serif;
+    box-sizing: border-box;
+}
+
+/*====================header section and hover effects=======================*/
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 19px 24px;
+    border-bottom: 2px solid gray;
+    background-color: antiquewhite;
+}
+
+.navigation {
+    position: sticky;
+    top: 0;
+    left: 0;
+    display: flex;
+    list-style: none;
+    margin-top: 21px;
+}
+
+.navigation a {
+    padding: 12px 12px;
+    text-decoration: none;
+    margin: 12px 12px;
+}
+
+a {
+    text-decoration: none;
+    transition: all ease-in-out 0.5s;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    transition: all ease-in-out 0.5s;
+}
+
+ a:hover {
+    color: rgb(118, 10, 190);
+    border-bottom: 1px solid #070707;
+    transform: translateY(-5px);
+}
+
+
+/*  ====================header img and text section ======================= */
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    /* border: 1px solid red; */
+    height: 31.25rem;
+    /* width: 36rem; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+span {
+    color: rgb(118, 10, 190);
+}
+.btn1{
+    width: 8rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    position: absolute;
+    top: 28rem;
+    left: 4rem;
+    background: none;
+    border-radius: 25px;
+    transition: all ease-in-out 0.5s;
+    border: 1px solid rgb(150, 81, 196);
+    cursor: pointer;
+    position: absolute;
+    top: 26rem;
+    left: 1.5rem;
+
+    
+}
+
+.btn2{
+    cursor: pointer;
+    transition: all ease-in-out 0.5s;
+    border: 1px solid rgb(150, 81, 196);
+    width: 8rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    background: none;
+    border-radius: 25px;
+    position: absolute;
+    top: 26rem;
+    left: 10rem;
+     
+}
+
+.btn:hover {
+    background-color: rgb(150, 81, 196);
+    transform: translatey(-5px);
+    border: none;
+}
+
+@media screen and (max-width:1111px) {
+    .navigation{
+        display: none;
+    }
+    header{
+        justify-content: center;
+    }
+    .row{
+        flex-direction: column;
+        word-wrap: break-word;
+        flex-wrap: wrap; 
+    }
+    .card{
+        flex-basis: 1;
+        height: 400px;
+        overflow:hidden;
+        flex-wrap: wrap;
+    }
+    .btn{
+        display: flex;
+        justify-items: center;
+        justify-content: center;
+    }
+}
+@media screen and (max-width:568px) {
+   
+    p{
+        font-size: small;
+        flex-wrap: wrap;
+    }   
+    .img-card{
+    height:25rem;
+    } 
+}
+@media screen and (max-width:466px) {
+   
+    p{
+        font-size: small;
+        flex-wrap: wrap;
+    }   
+    .img-card{
+    height:15rem;
+    } 
+}
+@media screen and (max-width:280px) {
+   h1,span{
+    font-size: medium;
+   }
+    .btn{
+        width: 6rem;
+        
+    }
+}
+    </style>
+</head>
+
+<body>
+    <!-- ====================header section======================= -->
+    <header>
+        <div class="logo">
+            <img src="https://blogger.googleusercontent.com/img/a/AVvXsEjcO2Je06--nEQPp2Qrzvr9G79a8QyQuKLLDam11vuOdhFQR-gLuWu7VKXf-akPaQgqTHDLagMlIM_k1FlDi2iU6alqAWRpwU04VqHADAHoWRub-U9Za-WTdcElPkyPGFw50cWueofKnbDIHsFs5Qo0D_CZ_BTLBXDp64tTjD3mbmY9wvDxTSaMzasXwA=w352-h153-p-k-no-nu" width="170px" height="60px"
+                alt="this is logo">
+        </div>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li><a href="">Home</a></li>
+                <li><a href="">Project</a></li>
+                <li><a href="">Skill</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- ====================header img and text section ======================= -->
+    <div class="row">
+        <div class="card">
+            
+            <h1>Welcome to <Span>Code With Radhe</Span></h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis veritatis nemo, ipsa tempore id
+                magni nobis, iste delectus sapiente dicta dolores ab veniam facere culpa placeat quod dignissimos
+            </p>
+            
+        </div>
+        <button class="btn1 btn">Hire Me</button> 
+        <button class="btn2 btn">About Me</button>
+        <div class="card">
+            
+            <img src="https://blogger.googleusercontent.com/img/a/AVvXsEg1Fnk2GLMk4Yu2F2zqWz-Iq8bPgNs_VCzDZchDL9K2p2udwpxYClX36thC7cAF0zwSaO_pGhxF8Y9I_WVoUV8-zVrD_KEfs4mikVXYyYVgawfzdkQsRP3G6oLtC1zyQEoRrLeHbEQ3dsmGqYogxcRWQajMHCL4JLU6E8NtKQEp0dQFKgP-0DkIZ-zzuQ=w704-h704-p-k-no-nu" class="img-card" alt="">
+        </div>
+    </div>
+
+
+</body>
+
+</html>
